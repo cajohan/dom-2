@@ -55,7 +55,7 @@ jQuery.fn = jQuery.prototype = {
   },
   find(seletor) {
     let array = [];
-    for (let i = 0; i < length; i++) {
+    for (let i = 0; i < this.elements.length; i++) {
       const elements2 = Array.from(this.elements[i].querySelectorAll(seletor));
       array = array.concat(this.elements2);
     }
